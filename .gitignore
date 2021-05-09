@@ -1,2 +1,8 @@
-/data/train/**
-!/data/train/README.md
+# MS-COCO training data has to excluded due to size
+/data/train/train2014
+
+# All stylized-images generated from different NST methods have to be excluded due to size
+/nst-methods/**/**.jpg
+
+# All trained models for the fast-neural-style method have to be excluded due to size
+/nst-methods/fast-neural-style/trained-models/**

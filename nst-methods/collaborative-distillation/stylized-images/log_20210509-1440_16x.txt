@@ -1,0 +1,154 @@
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '104010.jpg'), ('picked_style_mark', '1.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "104010+1.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9657 seconds
+Processed 1 images. Average processing time per pair is: 0.9657 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '145079.jpg'), ('picked_style_mark', '1.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "145079+1.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9346 seconds
+Processed 1 images. Average processing time per pair is: 0.9346 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '65084.jpg'), ('picked_style_mark', '1.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "65084+1.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9491 seconds
+Processed 1 images. Average processing time per pair is: 0.9491 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '81090.jpg'), ('picked_style_mark', '1.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "81090+1.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9363 seconds
+Processed 1 images. Average processing time per pair is: 0.9363 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '128035.jpg'), ('picked_style_mark', '1.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "128035+1.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9485 seconds
+Processed 1 images. Average processing time per pair is: 0.9485 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '281017.jpg'), ('picked_style_mark', '1.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "281017+1.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9667 seconds
+Processed 1 images. Average processing time per pair is: 0.9667 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '70090.jpg'), ('picked_style_mark', '1.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "70090+1.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9811 seconds
+Processed 1 images. Average processing time per pair is: 0.9811 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '107014.jpg'), ('picked_style_mark', '1.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "107014+1.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9758 seconds
+Processed 1 images. Average processing time per pair is: 0.9758 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '43051.jpg'), ('picked_style_mark', '1.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "43051+1.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9539 seconds
+Processed 1 images. Average processing time per pair is: 0.9539 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '140006.jpg'), ('picked_style_mark', '1.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "140006+1.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 1.0115 seconds
+Processed 1 images. Average processing time per pair is: 1.0115 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '80085.jpg'), ('picked_style_mark', '10.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "80085+10.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9515 seconds
+Processed 1 images. Average processing time per pair is: 0.9515 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '157032.jpg'), ('picked_style_mark', '10.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "157032+10.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9651 seconds
+Processed 1 images. Average processing time per pair is: 0.9651 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '69022.jpg'), ('picked_style_mark', '10.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "69022+10.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9678 seconds
+Processed 1 images. Average processing time per pair is: 0.9678 seconds
+[('UHD', False), ('UHD_contentPath', 'content/UHD_content'), ('UHD_stylePath', 'style/UHD_style'), ('alpha', 1), ('contentPath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\content-images-512'), ('content_size', 0), ('d1', '../trained_models/wct_se_16x_new_sd/20191111-091942_E20.pth'), ('d2', '../trained_models/wct_se_16x_new_sd/20191111-091932_E20.pth'), ('d3', '../trained_models/wct_se_16x_new_sd/20191111-091929_E20.pth'), ('d4', '../trained_models/wct_se_16x_new_sd/20191111-092553_E20.pth'), ('d5', '../trained_models/wct_se_16x_new_sd/20191110-204615_E20.pth'), ('debug', False), ('e1', '../trained_models/wct_se_16x_new/20191110-133713_E20.pth'), ('e2', '../trained_models/wct_se_16x_new/20191110-132713_E20.pth'), ('e3', '../trained_models/wct_se_16x_new/20191110-132705_E20.pth'), ('e4', '../trained_models/wct_se_16x_new/20191110-132643_E20.pth'), ('e5', '../trained_models/wct_se_16x_new/20191109-211322_E20.pth'), ('log_mark', '20210509-1440'), ('mode', '16x'), ('num_run', 1), ('numpy', False), ('outf', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\nst-methods\\collaborative-distillation\\stylized-images'), ('picked_content_mark', '14092.jpg'), ('picked_style_mark', '10.png'), ('stylePath', 'C:\\Users\\jonas\\Documents\\git-projects\\nst-methods-quantitative-comparison\\data\\test\\style-images-512'), ('style_size', 0), ('synthesis', False), ('texturePath', 'style/texture')]
+Number of content-style pairs: 1
+
+****************************** #0: Transferring "14092+10.jpg"
+Processing stage 5
+Processing stage 4
+Processing stage 3
+Processing stage 2
+Processing stage 1
+Elapsed time is: 0.9454 seconds
+Processed 1 images. Average processing time per pair is: 0.9454 seconds
