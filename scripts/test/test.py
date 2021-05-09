@@ -74,7 +74,7 @@ def parse_command(method_name, content_image_file_url, style_image_file_url, sty
         'fast-neural-style': f"python {os.path.join('neural_style', 'neural_style.py')} eval --content-image {content_image_file_url} --output-image {stylized_image_file_url} --model {os.path.join(fast_neural_style_trained_models_dir_url, f'{os.path.splitext(os.path.basename(style_image_file_url))[0]}.model')} --cuda 1",
         'pytorch-adain': f'python test.py --content {content_image_file_url} --style {style_image_file_url} --content_size 0 --style_size 0 --output {os.path.dirname(stylized_image_file_url)}',
         'pytorch-neural-style-transfer': f'python NeuralStyleTransfer.py --content-image {content_image_file_url} --style-image {style_image_file_url} --stylized-image {stylized_image_file_url}',
-        'pytorch-wct': 'python '
+        'pytorch-wct': f'python WCT.py --contentPath {os.path.dirname(content_image_file_url)} --stylePath {os.path.dirname(style_image_file_url)} --cuda --fineSize 0 --outf {os.path.dirname(stylized_image_file_url)}'
     }
     return command[method_name]
 
