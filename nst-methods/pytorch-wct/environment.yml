@@ -3,42 +3,48 @@ channels:
   - pytorch
   - defaults
 dependencies:
+  - _libgcc_mutex=0.1=main
   - blas=1.0=mkl
-  - ca-certificates=2021.4.13=haa95532_1
-  - certifi=2020.12.5=py37haa95532_0
-  - cffi=1.14.5=py37hcd4344a_0
+  - ca-certificates=2021.4.13=h06a4308_1
+  - certifi=2020.12.5=py37h06a4308_0
+  - cffi=1.14.5=py37h261ae71_0
   - cuda92=1.0=0
-  - freetype=2.10.4=hd328e21_0
-  - icc_rt=2019.0.0=h0cc432a_1
-  - intel-openmp=2021.2.0=haa95532_616
-  - jpeg=9b=hb83a4c4_2
-  - libpng=1.6.37=h2a8f88b_0
-  - libtiff=4.1.0=h56a325e_1
-  - lz4-c=1.9.3=h2bbff1b_0
-  - mkl=2021.2.0=haa95532_296
-  - mkl-service=2.3.0=py37h2bbff1b_1
-  - mkl_fft=1.3.0=py37h277e83a_2
-  - mkl_random=1.2.1=py37hf11a4ad_2
-  - numpy=1.20.1=py37h34a8a5c_0
-  - numpy-base=1.20.1=py37haf7ebc8_0
+  - freetype=2.10.4=h5ab3b9f_0
+  - intel-openmp=2021.2.0=h06a4308_610
+  - jpeg=9b=h024ee3a_2
+  - lcms2=2.12=h3be6417_0
+  - ld_impl_linux-64=2.33.1=h53a641e_7
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=9.1.0=hdf63c60_0
+  - libgfortran-ng=7.3.0=hdf63c60_0
+  - libpng=1.6.37=hbc83047_0
+  - libstdcxx-ng=9.1.0=hdf63c60_0
+  - libtiff=4.1.0=h2733197_1
+  - lz4-c=1.9.3=h2531618_0
+  - mkl=2021.2.0=h06a4308_296
+  - mkl-service=2.3.0=py37h27cfd23_1
+  - mkl_fft=1.3.0=py37h42c9631_2
+  - mkl_random=1.2.1=py37ha9443f7_2
+  - ncurses=6.2=he6710b0_1
+  - ninja=1.10.2=hff7bd54_1
+  - numpy=1.20.1=py37h93e21f0_0
+  - numpy-base=1.20.1=py37h7d8b39e_0
   - olefile=0.46=py37_0
-  - openssl=1.1.1k=h2bbff1b_0
-  - pillow=8.2.0=py37h4fa10fc_0
-  - pip=21.0.1=py37haa95532_0
+  - openssl=1.1.1k=h27cfd23_0
+  - pillow=8.2.0=py37he98fc37_0
+  - pip=21.0.1=py37h06a4308_0
   - pycparser=2.20=py_2
-  - python=3.7.10=h6244533_0
-  - pytorch=0.4.1=py37_cuda92_cudnn7he774522_1
-  - scipy=1.6.2=py37h66253e8_1
-  - setuptools=52.0.0=py37haa95532_0
-  - six=1.15.0=py37haa95532_0
-  - sqlite=3.35.4=h2bbff1b_0
-  - tk=8.6.10=he774522_0
+  - python=3.7.10=hdb3f193_0
+  - pytorch=0.4.1=py37_cuda9.2.148_cudnn7.1.4_1
+  - readline=8.1=h27cfd23_0
+  - scipy=1.6.2=py37had2a1c9_1
+  - setuptools=52.0.0=py37h06a4308_0
+  - six=1.15.0=py37h06a4308_0
+  - sqlite=3.35.4=hdfb4753_0
+  - tk=8.6.10=hbc83047_0
   - torchvision=0.2.1=py_2
-  - vc=14.2=h21ff451_1
-  - vs2015_runtime=14.27.29016=h5e58377_2
   - wheel=0.36.2=pyhd3eb1b0_0
-  - wincertstore=0.2=py37_0
-  - xz=5.2.5=h62dcd97_0
-  - zlib=1.2.11=h62dcd97_4
-  - zstd=1.4.9=h19a0ad4_0
-prefix: C:\Users\jonas\anaconda3\envs\pytorch-wct
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7b6447c_3
+  - zstd=1.4.9=haebb681_0
+prefix: /home/jonas/anaconda3/envs/pytorch-wct

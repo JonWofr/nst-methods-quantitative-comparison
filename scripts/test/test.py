@@ -7,7 +7,7 @@ import shutil
 def main():
     method_names = ['collaborative-distillation', 'fast-neural-style', 'pytorch-adain', 'pytorch-neural-style-transfer', 'pytorch-wct']
 
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description='Script which generates 100 stylized-images corresponding to the 100 content-style-image pairs for a given method.')
     parser.add_argument('--method-name', required=True, choices=method_names, help='The name of the NST method for which the stylized-images should be generated.')
     parser.add_argument('--method-dir-url', required=True, help='The url to the local repository of the NST method. Can be relative or absolute.')
     args = parser.parse_args()
@@ -15,9 +15,16 @@ def main():
         # This method has to be exectued from the subdirectory 'PytorchWCT'
         args.method_dir_url = os.path.join(args.method_dir_url, 'PytorchWCT')
     
-    # Creation of the directory in which all stylized-images of that particular method will be stored
-    os.makedirs(os.path.join('..', '..', 'nst-methods', args.method_name, 'stylized-images'), exist_ok=True)
+    prepare_dirs(args)
     stylize_images(args)
+
+
+# All previously created stylized-images (if any) for that particular method are deleted and the directory gets (re)created
+def prepare_dirs(args):
+    stylized_images_dir_url = os.path.join('..', '..', 'nst-methods', args.method_name, 'stylized-images')
+    if os.path.isdir(stylized_images_dir_url):
+        shutil.rmtree(stylized_images_dir_url)
+    os.makedirs(stylized_images_dir_url)
 
 
 def stylize_images(args):
@@ -74,7 +81,7 @@ def stylize_images(args):
         if args.method_name == 'collaborative-distillation' or args.method_name == 'pytorch-adain' or args.method_name == 'pytorch-wct':
             print('stylized-image file need renaming. Renaming...')
             rename_stylized_image(args.method_name, stylized_images_dir_url, stylized_image_filename)
-    
+
 
     content_style_image_pairs_file.close()
     times_file.close()
@@ -94,7 +101,7 @@ def preprocess_pytorch_wct(content_image_file_url, style_image_file_url, stylize
 
 def parse_command(method_name, content_image_file_url, style_image_file_url, stylized_image_file_url, fast_neural_style_trained_models_dir_url):
     command = {
-        'collaborative-distillation': f'python WCT.py --contentPath {os.path.dirname(content_image_file_url)} --stylePath {os.path.dirname(style_image_file_url)} --picked_content_mark {os.path.basename(content_image_file_url)} --picked_style_mark {os.path.basename(style_image_file_url)} --outf {os.path.dirname(stylized_image_file_url)} --mode 16x',
+        'collaborative-distillation': f'python WCT.py --contentPath {os.path.dirname(content_image_file_url)} --stylePath {os.path.dirname(style_image_file_url)} --picked_content_mark {os.path.basename(content_image_file_url)} --picked_style_mark {os.path.basename(style_image_file_url)} --outf {os.path.dirname(stylized_image_file_url)} --mode 16x --debug',
         'fast-neural-style': f"python {os.path.join('neural_style', 'neural_style.py')} eval --content-image {content_image_file_url} --output-image {stylized_image_file_url} --model {os.path.join(fast_neural_style_trained_models_dir_url, f'{os.path.splitext(os.path.basename(style_image_file_url))[0]}.model')} --cuda 1",
         'pytorch-adain': f'python test.py --content {content_image_file_url} --style {style_image_file_url} --content_size 0 --style_size 0 --output {os.path.dirname(stylized_image_file_url)}',
         'pytorch-neural-style-transfer': f'python NeuralStyleTransfer.py --content-image {content_image_file_url} --style-image {style_image_file_url} --stylized-image {stylized_image_file_url}',
