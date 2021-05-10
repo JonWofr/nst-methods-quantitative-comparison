@@ -49,7 +49,7 @@ def stylize_images(args):
         if line_index == 0:
             continue
         content_style_image_pair_index, content_image_filename, style_image_filename = line.strip('\n').split(',')
-        stylized_image_filename = f'weight1_content{os.path.splitext(content_image_filename)[0]}_style{os.path.splitext(style_image_filename)[0]}.jpg'
+        stylized_image_filename = f'weightdefault_content{os.path.splitext(content_image_filename)[0]}_style{os.path.splitext(style_image_filename)[0]}.jpg'
 
         content_image_file_url = os.path.join(content_images_dir_url, content_image_filename)
         style_image_file_url = os.path.join(style_images_dir_url, style_image_filename)
