@@ -1,3 +1,6 @@
+# This file can be used to randomly generate 100 content-style-pairs and write them to a csv file
+
+
 import os
 import random
 

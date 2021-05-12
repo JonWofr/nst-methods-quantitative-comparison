@@ -3,8 +3,7 @@ from PIL import Image
 import argparse
 
 parser = argparse.ArgumentParser(description='Script to convert all .png images in a directory into .jpg images. The .png images will be replaced.')
-parser.add_argument('--images-dir-url', required=True,
-                    help='The image directory in which the images are located which should be converted from .png to .jpg')
+parser.add_argument('--images-dir-url', required=True, help='The image directory in which the images are located which should be converted from .png to .jpg')
 args = parser.parse_args()
 
 images_dir_url = args.images_dir_url

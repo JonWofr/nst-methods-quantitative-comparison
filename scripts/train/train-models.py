@@ -16,7 +16,7 @@ def train_models(args):
 
     style_image_filenames = os.listdir(style_images_dir_url)
 
-    # Change directory to the directory of the NST method for which the stylized-images should be generated
+    # Change directory to the directory of the fast-neural-style project
     os.chdir(args.fast_neural_style_dir_url)
 
     for style_image_filename in style_image_filenames:
@@ -24,7 +24,7 @@ def train_models(args):
 
         command = f'python neural_style/neural_style.py train --dataset {train_data_dir_url} --style-image {style_image_file_url} --save-model-dir {trained_models_dir_url} --cuda 1'
 
-        # Execute the command to stylize the content-style-image pair in another subshell
+        # Execute the command to train a model on the given style
         os.system(command)
         print(f'Training model for style image: {style_image_filename}')
 

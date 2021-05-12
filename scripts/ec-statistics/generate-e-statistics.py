@@ -4,7 +4,7 @@ import os
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--method-name', required=True, choices=['collaborative-distillation', 'fast-neural-style', 'pytorch-adain', 'pytorch-neural-style-transfer', 'pytorch-wct'], help='The name of the NST method for which the E statistic should be generated.')
+    parser.add_argument('--method-name', required=True, choices=['collaborative-distillation', 'fast-neural-style', 'pytorch-adain', 'pytorch-neural-style-transfer', 'pytorch-wct', 'style-reference', 'content-reference'], help='The name of the NST method for which the E statistic should be generated. Providing style- or content-reference will calculate the E statistics for the style- content-images respectively. This can be done as a reference for the comparison.')
     parser.add_argument('--quantitative-style-project-dir-url', required=True, help='The URL to the local repository of the quantitative-style project. Can be relative or absolute.')
     args = parser.parse_args()
     # The E statistic generation has to happen from the corresponding subdirectory
