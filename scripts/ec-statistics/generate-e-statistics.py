@@ -15,7 +15,7 @@ def main():
 
 def generate_e_statistics(args):
     style_images_dir_url = os.path.abspath(os.path.join('..', '..', 'data', 'test', 'style-images-512'))
-    stylized_images_dir_url = os.path.abspath(os.path.join('..', '..', 'nst-methods', args.method_name, 'stylized-images'))
+    stylized_images_dir_url = os.path.abspath(os.path.join('..', '..', 'nst-methods', args.method_name, 'stylized-images' if args.method_name != 'style-reference' else 'stylized-images-512')) # The stylized-images directory of the style-reference method does only consist of the copied and renamed but unresized style-images. Therefore not matching the content-image dimensions. The stylized-images-512 directory does additionally have the resized versions which are necessary for a fair comparison.
     stylized_images_file_url = os.path.abspath(os.path.join('..', '..', 'nst-methods', args.method_name, 'stylized-images.csv'))
     e_statistics_file_url = os.path.abspath(os.path.join('..', '..', 'nst-methods', args.method_name, 'e-statistics.csv'))
 

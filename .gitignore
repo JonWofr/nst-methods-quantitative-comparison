@@ -4,6 +4,7 @@
 # All stylized-images generated from different NST methods have to be excluded due to size
 /nst-methods/**/stylized-images
 /nst-methods/**/stylized-images-321
+/nst-methods/**/stylized-images-512
 
 # All trained models for the fast-neural-style method have to be excluded due to size
 /nst-methods/fast-neural-style/trained-models
