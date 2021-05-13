@@ -9,11 +9,11 @@ parser.add_argument('--smaller-side-size', type=int, default=None, help='By defi
 parser.add_argument('--larger-side-size', type=int, default=None, help='By defining this the images larger side (i.e. either width or height) will be resized to the given value and the other side will be resized respecting the aspect ratio. Either this option or --smaller-side-size has to be defined or both.')
 args = parser.parse_args()
 
-images_dir_url = args.images_dir_url
-image_filenames = os.listdir(images_dir_url)
+os.makedirs(args.resized_images_dir_url, exist_ok=True)
+image_filenames = os.listdir(args.images_dir_url)
 
 for image_filename in image_filenames:
-    image_file_url = os.path.join(images_dir_url, image_filename)
+    image_file_url = os.path.join(args.images_dir_url, image_filename)
     with Image.open(image_file_url) as image:
         aspect_ratio = image.width / image.height
         if aspect_ratio >= 1: # Image is square or horizontal
@@ -23,8 +23,6 @@ for image_filename in image_filenames:
             new_width = args.smaller_side_size if args.smaller_side_size else int(args.larger_side_size * aspect_ratio)
             new_height = args.larger_side_size if args.larger_side_size else int(args.smaller_side_size / aspect_ratio)
         resized_image = image.resize((new_width, new_height))
-    resized_images_dir_url = args.resized_images_dir_url
-    os.makedirs(resized_images_dir_url, exist_ok=True)
     resized_image_file_url = os.path.join(
-        resized_images_dir_url, image_filename)
+        args.resized_images_dir_url, image_filename)
     resized_image.save(resized_image_file_url)

@@ -5,7 +5,8 @@ import os
 content_style_image_pairs_file_url = os.path.join('..', '..', 'data', 'test', 'content-style-image-pairs.csv')
 content_style_image_pairs_file = open(content_style_image_pairs_file_url, 'r')
 
-wcs_txt_file = open(os.path.join('..', '..', 'data', 'test', 'wcs.txt'), 'w')
+wcs_file = open(os.path.join('..', '..', 'data', 'test', 'wcs.csv'), 'w')
+wcs_file.write('weight(1=default),style,content')
 
 for index, line in enumerate(content_style_image_pairs_file):
     # First line is the header
@@ -14,8 +15,8 @@ for index, line in enumerate(content_style_image_pairs_file):
     _, content_image_filename, style_image_filename = line.strip('\n').split(',')
     content_image_filename_without_ext = os.path.splitext(content_image_filename)[0]
     style_image_filename_without_ext = os.path.splitext(style_image_filename)[0]
-    line = ' '.join(['1', content_image_filename_without_ext, style_image_filename_without_ext])
-    wcs_txt_file.write(line if index == 1 else f'\n{line}')
+    line = ','.join(['1', content_image_filename_without_ext, style_image_filename_without_ext])
+    wcs_file.write(f'\n{line}')
 
 content_style_image_pairs_file.close()
-wcs_txt_file.close()
+wcs_file.close()
