@@ -9,19 +9,19 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--e-statistics-layer', required=True, choices=[1, 2, 3, 4, 5], type=int)
+    parser.add_argument('--e-statistics-layer', required=True, choices=['1', '2', '3', '4', '5'])
     args = parser.parse_args()
 
     create_ellipses_plot(args)
 
 
 def create_ellipses_plot(args):
-    _, axis = plt.subplots()
+    _, axis = plt.subplots(figsize=(720/100, 720/100))
 
     axis.axvline(c='grey', lw=1)
     axis.axhline(c='grey', lw=1)
     axis.grid()
-    axis.set_xlabel(f'E (from layer conv{str(args.e_statistics_layer)}_1)')
+    axis.set_xlabel(f'E (from layer conv{args.e_statistics_layer}_1)')
     axis.set_ylabel('C')
     axis.set_title('EC plot')
     axis.set_xlim((-6, 0))
@@ -36,9 +36,10 @@ def create_ellipses_plot(args):
         
         e_statistics_df = pd.read_csv(e_statistics_file_url)
         c_statistics_df = pd.read_csv(c_statistics_file_url)
+        ec_statistics_df = pd.merge(e_statistics_df, c_statistics_df, how='inner', on=['content', 'style'])
 
-        x = e_statistics_df[f'E{str(args.e_statistics_layer)}']
-        y = c_statistics_df['C']
+        x = ec_statistics_df[f'E{args.e_statistics_layer}']
+        y = ec_statistics_df['C']
 
         plot_means(x, y, axis, color=method_color, marker='x')
         plot_confidence_ellipse(x, y, axis, n_std=1, facecolor=method_color, edgecolor=method_color, alpha=0.25, label=method_name)

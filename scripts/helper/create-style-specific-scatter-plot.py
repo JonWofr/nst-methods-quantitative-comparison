@@ -7,17 +7,17 @@ import argparse
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--e-statistics-layer', required=True, choices=[1, 2, 3, 4, 5], type=int)
+    parser.add_argument('--e-statistics-layer', required=True, choices=['1', '2', '3', '4', '5'])
     args = parser.parse_args()
 
     create_scatter_plot(args)
 
 
 def create_scatter_plot(args):  
-    figure, axes = plt.subplots(nrows=5, ncols=2)
+    figure, axes = plt.subplots(nrows=5, ncols=2, figsize=(720/100, 720/100))
     for axis_row_index, axis_row in enumerate(axes):
         for axis_column_index, axis_column in enumerate(axis_row):
-            configure_axis(axis_column, axis_row_index, axis_column_index, args.e_statistics_layer)
+            configure_axis(axis_column, axis_row_index, axis_column_index)
 
     method_names = ['collaborative-distillation', 'fast-neural-style', 'pytorch-adain', 'pytorch-neural-style-transfer', 'pytorch-wct']
     method_colors = ['red', 'blue', 'green', 'black', 'cyan']
@@ -28,9 +28,10 @@ def create_scatter_plot(args):
 
         e_statistics_df = pd.read_csv(e_statistics_file_url)
         c_statistics_df = pd.read_csv(c_statistics_file_url)
+        ec_statistics_df = pd.merge(e_statistics_df, c_statistics_df, how='inner', on=['content', 'style'])
 
-        x = e_statistics_df[f'E{str(args.e_statistics_layer)}']
-        y = c_statistics_df['C']
+        x = ec_statistics_df[f'E{args.e_statistics_layer}']
+        y = ec_statistics_df['C']
         styles = e_statistics_df['style']
         
         plot_all_points(x, y, axes, styles, color=method_color, label=method_name)
@@ -38,17 +39,16 @@ def create_scatter_plot(args):
 
     handles, labels = axes[-1, -1].get_legend_handles_labels()
     unique = [(handle, label) for index, (handle, label) in enumerate(zip(handles, labels)) if label not in labels[:index]]
-    figure.legend(*zip(*unique), loc='lower right')
-    figure.subplots_adjust(wspace=0, hspace=0)
-    figure.suptitle(f'Image-specific (E from layer cov{args.e_statistics_layer}_1)')
-    figure_output_url = os.path.join('..', '..', 'plots', f'scatter-plot-layer-conv{args.e_statistics_layer}_1.png')
-    plt.savefig(figure_output_url)
+    figure.legend(*zip(*unique), loc='lower left')
+    figure.subplots_adjust(wspace=0.05, hspace=0.1)
+    figure.suptitle(f'Style-specific (E from layer conv{args.e_statistics_layer}_1)')
+    figure_output_url = os.path.join('..', '..', 'plots', f'style-specific-scatter-plot-layer-conv{args.e_statistics_layer}_1.png')
+    plt.savefig(figure_output_url, bbox_inches='tight')
     # plt.show()
 
 
 
-def configure_axis(axis, axis_row_index, axis_column_index, e_statistics_layer):
-    axis_index = axis_row_index * 2 + axis_column_index
+def configure_axis(axis, axis_row_index, axis_column_index):
     axis.axvline(c='grey', lw=1)
     axis.axhline(c='grey', lw=1)
     axis.grid()
