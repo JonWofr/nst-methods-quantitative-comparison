@@ -74,7 +74,7 @@ def create_scatter_plot(args):
             axis.set_ylabel(y_labels[2 - int(index / 3)], fontsize=18)
         if int(index / 3) == 2:
             axis.set_xlabel(x_labels[index % 3], fontsize=18)
-        placeholder_image = plt.imread(os.path.join('..', '..', 'assets', 'images', 'no-image-available.jpg'))
+        placeholder_image = plt.imread(os.path.join('..', '..', 'assets', 'images', 'placeholder.jpg'))
         axis.imshow(placeholder_image)
 
     for index in range(len(all_ec_statistics_df)):
@@ -91,7 +91,7 @@ def create_scatter_plot(args):
             f"{method_name}\n({args.e_statistics}: {round(float(ec_statistics_series[args.e_statistics]), 2)}, C: {ec_statistics_series['C']})")
         axes[2 - row_index][column_index].imshow(stylized_image)
 
-    figure.subplots_adjust(wspace=0.1, hspace=0)
+    figure.subplots_adjust(wspace=0.1, hspace=0.1)
     figure_output_url = os.path.join('..', '..', 'plots', 'stylized-image-map-plots',
                                      f'stylized-image-map-plot-statistics-{args.e_statistics}-style-{args.style}-content-index-{args.content_index}.png')
     plt.savefig(figure_output_url, bbox_inches='tight')
