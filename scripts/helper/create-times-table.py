@@ -16,7 +16,8 @@ for method_name in method_names:
         '..', '..', 'nst-methods', method_name, 'times.csv')
 
     times_df = pd.read_csv(times_file_url)
-    duration_in_ms = times_df['duration_in_ms']
+    # The first row of the times file consists of the duration it took to generate the first image. Due to initialization processes in each implementation this duration is comparably relatively large. It is an outlier which distorts the results. Therefore it is ignored for each method.
+    duration_in_ms = times_df['duration_in_ms'].iloc[1:]
     duration_min_in_ms = duration_in_ms.min()
     duration_max_in_ms = duration_in_ms.max()
     duration_mean_in_ms = duration_in_ms.mean()
