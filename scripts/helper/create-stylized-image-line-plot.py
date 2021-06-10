@@ -3,6 +3,15 @@ import os
 import matplotlib.pyplot as plt
 import argparse
 
+plot_label_map = {
+    'collaborative-distillation': 'Collaborative Distillation',
+    'fast-neural-style': 'Fast Neural Style',
+    'pytorch-adain': 'AdaIN',
+    'pytorch-neural-style-transfer': 'A Neural Algorithm of Artistic Style',
+    'pytorch-wct': 'WCT',
+    'content-reference': 'Content Reference',
+    'style-reference': 'Style Reference'
+}
 
 def main():
     parser = argparse.ArgumentParser()
@@ -47,14 +56,14 @@ def create_stylized_image_line_plot(args):
 
     # Plot the content-image on one end of the line
     content_image_axis_index = 0 if args.statistics != 'C' else -1
-    axes[content_image_axis_index].set_title('content-image')
+    axes[content_image_axis_index].set_title('Content-Image')
     axes[content_image_axis_index].axis('off')
     axes[content_image_axis_index].imshow(plt.imread(os.path.join(
         '..', '..', 'data', 'test', 'content-images-512', f"{all_ec_statistics_df.iloc[0]['content']}.jpg")))
 
     # Plot the style-image on the other end of the line
     style_image_axis_index = 0 if args.statistics == 'C' else -1
-    axes[style_image_axis_index].set_title('style-image')
+    axes[style_image_axis_index].set_title('Style-Image')
     axes[style_image_axis_index].axis('off')
     axes[style_image_axis_index].imshow(plt.imread(os.path.join(
         '..', '..', 'data', 'test', 'style-images-512', f'{args.style}.jpg')))
@@ -66,12 +75,11 @@ def create_stylized_image_line_plot(args):
                                                f"weightdefault_content{ec_statistics_series['content']}_style{ec_statistics_series['style']}.jpg")
         stylized_image = plt.imread(stylized_image_file_url)
         axes[index + 1].set_title(
-            f'{method_name}\n({args.statistics}: {round(float(ec_statistics_series[args.statistics]), 2)})')
+            f'{plot_label_map[method_name]}\n(Base-{args.statistics}: {round(float(ec_statistics_series[args.statistics]), 2)})')
         axes[index + 1].axis('off')
         axes[index + 1].imshow(stylized_image)
 
     figure.subplots_adjust(wspace=0, hspace=0)
-    # figure.suptitle(f'Image comparison (sorted by {args.statistics})')
     figure_output_url = os.path.join('..', '..', 'plots', 'stylized-image-line-plots',
                                      f'stylized-image-line-plot-statistics-{args.statistics}-style-{args.style}-content-index-{args.content_index}.png')
     plt.savefig(figure_output_url, bbox_inches='tight')

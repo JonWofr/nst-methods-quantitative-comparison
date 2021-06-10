@@ -5,6 +5,16 @@ import matplotlib.pyplot as plt
 import argparse
 
 
+plot_label_map = {
+    'collaborative-distillation': 'Collaborative Distillation',
+    'fast-neural-style': 'Fast Neural Style',
+    'pytorch-adain': 'AdaIN',
+    'pytorch-neural-style-transfer': 'A Neural Algorithm of Artistic Style',
+    'pytorch-wct': 'WCT',
+    'content-reference': 'Content Reference',
+    'style-reference': 'Style Reference'
+}
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--style', required=True,
@@ -61,14 +71,14 @@ def create_scatter_plot(args):
         axis.set_yticklabels([])
         axis.set_frame_on(False)
         x_labels = {
-            0: f'Low {args.e_statistics}',
-            1: f'Medium {args.e_statistics}',
-            2: f'High {args.e_statistics}'
+            0: f'Niedrig Base-{args.e_statistics}',
+            1: f'Mittel Base-{args.e_statistics}',
+            2: f'Hoch Base-{args.e_statistics}'
         }
         y_labels = {
-            0: 'Low C',
-            1: 'Medium C',
-            2: 'High C'
+            0: 'Niedrig Base-C',
+            1: 'Mittel Base-C',
+            2: 'Hoch Base-C'
         }
         if index % 3 == 0:
             axis.set_ylabel(y_labels[2 - int(index / 3)], fontsize=18)
@@ -88,7 +98,7 @@ def create_scatter_plot(args):
         column_index = int((ec_statistics_series[args.e_statistics] - min_e_statistic) /
                            (range_e_statistic / 3)) if ec_statistics_series[args.e_statistics] != max_e_statistic else 2
         axes[2 - row_index][column_index].set_title(
-            f"{method_name}\n({args.e_statistics}: {round(float(ec_statistics_series[args.e_statistics]), 2)}, C: {ec_statistics_series['C']})")
+            f"{plot_label_map[method_name]}\n(Base-{args.e_statistics}: {round(float(ec_statistics_series[args.e_statistics]), 2)}, Base-C: {ec_statistics_series['C']})")
         axes[2 - row_index][column_index].imshow(stylized_image)
 
     figure.subplots_adjust(wspace=0.1, hspace=0.1)

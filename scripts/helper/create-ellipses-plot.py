@@ -6,6 +6,16 @@ from matplotlib.patches import Ellipse
 import matplotlib.transforms as transforms
 import argparse
 
+plot_label_map = {
+    'collaborative-distillation': 'Collaborative Distillation',
+    'fast-neural-style': 'Fast Neural Style',
+    'pytorch-adain': 'AdaIN',
+    'pytorch-neural-style-transfer': 'A Neural Algorithm of Artistic Style',
+    'pytorch-wct': 'WCT',
+    'content-reference': 'Content Reference',
+    'style-reference': 'Style Reference'
+}
+
 
 def main():
     parser = argparse.ArgumentParser()
@@ -21,9 +31,8 @@ def create_ellipses_plot(args):
     axis.axvline(c='grey', lw=1)
     axis.axhline(c='grey', lw=1)
     axis.grid()
-    axis.set_xlabel(f'E (from layer conv{args.e_statistics_layer}_1)')
-    axis.set_ylabel('C')
-    axis.set_title('EC plot')
+    axis.set_xlabel(f'Base-E{args.e_statistics_layer}')
+    axis.set_ylabel('Base-C')
     axis.set_xlim((-6, 0))
     axis.set_ylim((0.2, 0.8))
 
@@ -42,7 +51,7 @@ def create_ellipses_plot(args):
         y = ec_statistics_df['C']
 
         plot_means(x, y, axis, color=method_color, marker='x')
-        plot_confidence_ellipse(x, y, axis, n_std=1, facecolor=method_color, edgecolor=method_color, alpha=0.25, label=method_name)
+        plot_confidence_ellipse(x, y, axis, n_std=1, facecolor=method_color, edgecolor=method_color, alpha=0.25, label=plot_label_map[method_name])
 
 
 
